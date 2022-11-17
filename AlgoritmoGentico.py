@@ -7,8 +7,8 @@ linhas = arq.readlines()
 dna = ['A','T','C','G']
 model = linhas[0]
 chromosome_size = len(model)
-population_size = 500
-generations = 10000
+population_size = 100
+generations = 1000
 
 def weighted_choice(items):
   total_weight = sum((item[1] for item in items))
@@ -81,5 +81,5 @@ if __name__ == "__main__":
       fit_string = individual
       minimum_fitness = fit_individual
   print("População Final: %s" % fit_string)
-  print("Modelo: " + linhas[0])
-  
+  print("Modelo: " + model)
+ 
